@@ -202,6 +202,31 @@
     .check-no { color: #dc2626; font-weight: 700; }
     .check-cond { color: #ea580c; font-weight: 700; }
 
+    /* 바로가기 버튼 스타일 추가 */
+    .link-btn-container {
+      margin-top: 16px;
+      text-align: left;
+    }
+
+    .shortcut-btn {
+      display: inline-block;
+      background: #1d4ed8;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: background 0.2s ease, transform 0.1s ease;
+      box-shadow: 0 4px 6px -1px rgba(29, 78, 216, 0.2);
+    }
+
+    .shortcut-btn:hover {
+      background: #1e40af;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 10px -1px rgba(29, 78, 216, 0.3);
+    }
+
     .footer {
       background: #0f172a;
       color: #94a3b8;
@@ -265,11 +290,18 @@
           <div class="card-desc" style="color: #475569;">
             대구광역시교육청의 납품 기한(2026. 08. 14) 및 한국수력원자력(9월 이내) 일정이 긴박합니다.
             <ul>
-              <li><strong>개발 착수 즉시:</strong> DB 스키마와 URL 구조가 확정되므로 사후 변경 시 재개발 비용이 과다하게 발생합니다.</li>
-              <li><strong>마지막 선택 시점:</strong> 멀티테넌트 개발 공수를 감안할 때 바로 설계 방향을 확정해야 합니다.</li>
+              <li><strong>개발 착수 즉시:</strong> DB 스키마와 URL 구조가 확정되므로 사후 변경 시 전면 재개발 비용 발생</li>
+              <li><strong>마지막 선택 시점:</strong> 멀티테넌트 개발 공수를 감안할 때 바로 설계 방향 확정 필요</li>
             </ul>
           </div>
         </div>
+      </div>
+      
+      <!-- 바로가기 버튼 추가 -->
+      <div class="link-btn-container">
+        <a href="https://flame4024-web.github.io/mskwon-assesta/" class="shortcut-btn" target="_blank">
+          🖥 농식품인재개발원 플랫폼 구성도 및 메뉴 흐름 (바로가기)
+        </a>
       </div>
     </div>
 
